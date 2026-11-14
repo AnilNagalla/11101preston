@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Highlands | Class A Commercial Space</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            600: '#0f172a',
+                            700: '#090d16',
+                            accent: '#3b82f6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .hero-backdrop {
+            background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.75), rgba(9, 13, 22, 0.85)), url('watermarked_img_336376451091562629.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-blue-600 selection:text-white font-sans">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center space-x-2">
+                <span class="text-base sm:text-lg font-extrabold tracking-tight text-slate-900">Preston Highlands <span class="text-blue-600 font-medium text-xs sm:text-sm block sm:inline">Class A Commercial Space</span></span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#leasing" class="hover:text-blue-600 transition">Leasing</a>
+                <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
+                <a href="#location" class="hover:text-blue-600 transition">Location</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="mailto:contact@9xgc.com" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm shadow-blue-500/20 transition">
+                    Inquire Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden p-2 text-slate-700 hover:text-slate-900 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="#home" class="block py-2 text-slate-700 font-medium hover:text-blue-600">Home</a>
+            <a href="#leasing" class="block py-2 text-slate-700 font-medium hover:text-blue-600">Leasing</a>
+            <a href="#gallery" class="block py-2 text-slate-700 font-medium hover:text-blue-600">Gallery</a>
+            <a href="#location" class="block py-2 text-slate-700 font-medium hover:text-blue-600">Location</a>
+            <a href="#contact" class="block py-2 text-slate-700 font-medium hover:text-blue-600">Contact</a>
+            <div class="pt-2">
+                <a href="mailto:contact@9xgc.com" class="block text-center bg-blue-600 text-white py-3 rounded-xl font-semibold text-sm shadow-md">Inquire Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Cleaned Up Backdrop -->
+    <section id="home" class="relative hero-backdrop text-white min-h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center space-x-2 bg-blue-500/15 text-blue-300 px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase border border-blue-400/30 mb-6 backdrop-blur-md">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                    <span>Class A Commercial & Retail Property</span>
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-[1.1]">
+                    Preston Highlands <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-sky-200 text-3xl sm:text-5xl mt-2 font-bold">11101 Preston Rd, Frisco, TX</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed font-light">
+                    18,761 SF premier retail and office building fronting Preston Road. Featuring 14,536 SF ground-level restaurant/retail/medical space and 4,225 SF second-floor office space with expansive balconies and breathtaking views[cite: 1, 4].
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#leasing" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-blue-600/30 transition text-center flex items-center justify-center space-x-2">
+                        <span>Explore Leasing Specs</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#contact" class="bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-md transition text-center">
+                        Contact Leasing Office
+                    </a>
+                </div>
+
+                <!-- Quick Stats Bar -->
+                <div class="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 border-t border-white/15">
+                    <div>
+                        <div class="text-3xl font-black text-blue-300">18,761 SF</div>
+                        <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider font-semibold">Total Building Size</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-black text-blue-300">58k+</div>
+                        <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider font-semibold">VPD on Preston Rd</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-black text-blue-300">Class A</div>
+                        <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider font-semibold">Modern Structure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leasing & Property Details Section -->
+    <section id="leasing" class="py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Leasing Opportunities</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mt-2">Property & Leasing Highlights</h2>
+                <p class="text-slate-600 mt-4 text-lg font-light">Strategically positioned at the SWC of Preston Rd & Eldorado Pkwy in Frisco, offering unmatched visibility and premier amenities[cite: 1].</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+                <!-- Ground Level Retail -->
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 hover:shadow-2xl hover:border-blue-100 transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-600/20 group-hover:scale-110 transition">
+                            <i data-lucide="store" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Ground Level Retail</h3>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">14,536 SF tailored for high-end restaurants, retail storefronts, and medical practices with high 20ft to 38ft ceilings[cite: 1, 4].</p>
+                        <ul class="space-y-3 text-slate-700 text-sm mb-8">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> Individual bays from 1,500 SF to 2,500 SF</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> Direct Preston Road frontage & exposure</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> Ample surface parking & easy access</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:contact@9xgc.com" class="block w-full py-3.5 bg-slate-900 hover:bg-blue-600 text-white font-semibold text-center rounded-xl transition text-sm shadow-sm">Inquire Ground Floor</a>
+                </div>
+
+                <!-- Second Level Office -->
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 hover:shadow-2xl hover:border-blue-100 transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-600/20 group-hover:scale-110 transition">
+                            <i data-lucide="briefcase" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Second Level Office</h3>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">4,225 SF of premium executive office space with expansive private balconies and scenic views[cite: 1, 4].</p>
+                        <ul class="space-y-3 text-slate-700 text-sm mb-8">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> Full glass elevator & breezy stairways</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> North Wing (1,966 SF) & South Wing (2,375 SF)[cite: 4]</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> Abundant natural lighting & modern finishes</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:contact@9xgc.com" class="block w-full py-3.5 bg-slate-900 hover:bg-blue-600 text-white font-semibold text-center rounded-xl transition text-sm shadow-sm">Inquire Office Space</a>
+                </div>
+
+                <!-- Strategic Proximity -->
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 hover:shadow-2xl hover:border-blue-100 transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-slate-900 text-blue-400 rounded-2xl flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition">
+                            <i data-lucide="trending-up" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Prime Growth Corridor</h3>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">Surrounded by booming master-planned developments, world-class sports hubs, and high-density residential communities.</p>
+                        <ul class="space-y-3 text-slate-700 text-sm mb-8">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> Adjacent to 2,600-acre Brinkmann residential project[cite: 1]</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> < 1 mile from UNT Frisco (~3,500 students)[cite: 1, 2]</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-600 mr-3 shrink-0"></i> Warren Sports Complex (1M+ annual visitors)[cite: 1, 2]</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:contact@9xgc.com" class="block w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center rounded-xl transition text-sm shadow-md shadow-blue-600/20">Request Complete Flyer</a>
+                </div>
+            </div>
+
+            <!-- Demographics & Traffic Stats Grid -->
+            <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-14 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+                    <div>
+                        <span class="text-blue-400 font-bold tracking-widest uppercase text-xs">Market Intelligence</span>
+                        <h3 class="text-3xl sm:text-4xl font-black mt-2 mb-4">Unrivaled Demographics & Traffic</h3>
+                        <p class="text-slate-300 leading-relaxed mb-8 font-light">
+                            Located in one of the fastest-growing and most affluent corridors in North Texas. High household incomes and heavy daily vehicle traffic guarantee steady foot traffic for businesses.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 pt-6 border-t border-slate-800">
+                            <div>
+                                <div class="text-2xl sm:text-3xl font-black text-blue-400">58,000 VPD</div>
+                                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Preston Road Traffic[cite: 2]</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl sm:text-3xl font-black text-blue-400">30,000 VPD</div>
+                                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Eldorado Pkwy Traffic[cite: 2]</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto bg-slate-800/50 p-6 rounded-2xl border border-slate-700/60 backdrop-blur-md">
+                        <table class="w-full text-left text-sm text-slate-300">
+                            <thead>
+                                <tr class="border-b border-slate-700 text-white font-bold">
+                                    <th class="py-3 px-3">Radius</th>
+                                    <th class="py-3 px-3">Population</th>
+                                    <th class="py-3 px-3">Avg HH Income</th>
+                                    <th class="py-3 px-3">Daytime Pop</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-700/50">
+                                <tr>
+                                    <td class="py-3 px-3 font-semibold text-white">1 Mile</td>
+                                    <td class="py-3 px-3">148,998</td>
+                                    <td class="py-3 px-3 text-blue-400 font-bold">$152,259</td>
+                                    <td class="py-3 px-3">5,960</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-3 font-semibold text-white">3 Mile</td>
+                                    <td class="py-3 px-3">118,669</td>
+                                    <td class="py-3 px-3 text-blue-400 font-bold">$149,069</td>
+                                    <td class="py-3 px-3">69,953</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-3 font-semibold text-white">5 Mile</td>
+                                    <td class="py-3 px-3">308,015</td>
+                                    <td class="py-3 px-3 text-blue-400 font-bold">$168,705</td>
+                                    <td class="py-3 px-3">226,830</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Visual Showcase</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mt-2">Property Gallery & Architecture</h2>
+                <p class="text-slate-600 mt-4 text-lg font-light">High-definition architectural captures showcasing clean frontages, expansive window storefronts, and modern finishes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 group hover:shadow-xl transition duration-300">
+                    <div class="h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+                        <img src="watermarked_img_336376451091562629.jpg" alt="Building Exterior View" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Building Exterior View</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Clean modern facade with unobstructed front views and professional landscaping.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 group hover:shadow-xl transition duration-300">
+                    <div class="h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+                        <img src="IMG20261017181016 (1)_2.jpg" alt="Retail Storefronts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Retail Storefronts</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Expansive floor-to-ceiling glass windows offering maximum visibility along Preston Road.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 group hover:shadow-xl transition duration-300">
+                    <div class="h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+                        <img src="IMG20261017181029_2.jpg" alt="Architectural Wing" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Architectural Wing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Class A stone and metal construction featuring second-story walkout balconies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Map Section -->
+    <section id="location" class="py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Accessibility</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mt-2">Prime Location & Landmarks</h2>
+                <p class="text-slate-600 mt-4 text-lg font-light">Situated at the Southwest Corner of Preston Rd & Eldorado Pkwy, minutes from Frisco's top lifestyle and sports destinations[cite: 1, 2].</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <!-- Landmarks List -->
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 space-y-4">
+                    <h3 class="font-bold text-xl text-slate-900 mb-6 flex items-center">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        Nearby Destinations
+                    </h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="font-semibold text-slate-800">UNT at Frisco Campus</span>
+                            <span class="text-slate-500 font-medium">< 1 Mi (2-3m)[cite: 2]</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="font-semibold text-slate-800">Warren Sports Complex</span>
+                            <span class="text-slate-500 font-medium">1.1 Mi (3m)[cite: 2]</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="font-semibold text-slate-800">Toyota Stadium (FC Dallas)</span>
+                            <span class="text-slate-500 font-medium">3.5 Mi (7m)[cite: 2]</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="font-semibold text-slate-800">Universal Kids Resort</span>
+                            <span class="text-slate-500 font-medium">4.8 Mi (8-10m)[cite: 2]</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="font-semibold text-slate-800">PGA Frisco & Omni Resort</span>
+                            <span class="text-slate-500 font-medium">5.2 Mi (10m)[cite: 2]</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-slate-800">The Star in Frisco</span>
+                            <span class="text-slate-500 font-medium">6.8 Mi (12m)[cite: 2]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Card -->
+                <div class="lg:col-span-2 bg-slate-900 rounded-3xl overflow-hidden shadow-2xl border border-slate-800 flex flex-col justify-between p-10 text-white relative min-h-[420px]">
+                    <div class="absolute inset-0 opacity-30">
+                        <img src="watermarked_img_336376451091562629.jpg" alt="Map backdrop" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent"></div>
+
+                    <div class="relative z-10">
+                        <span class="bg-blue-600 text-white px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">SWC Preston Rd & Eldorado Pkwy</span>
+                        <h3 class="text-2xl sm:text-3xl font-black mt-4 mb-3">11101 Preston Rd, Frisco, TX 75033[cite: 1]</h3>
+                        <p class="text-slate-300 text-sm max-w-xl font-light leading-relaxed">Direct frontage on Preston Road with high visibility traffic flow connecting Prosper, Frisco, and surrounding northern communities.</p>
+                    </div>
+
+                    <div class="relative z-10 pt-10 flex flex-wrap gap-4">
+                        <a href="https://maps.app.goo.gl/hom6RMjiLQ8AK7Qy7" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-7 py-3.5 rounded-xl transition flex items-center space-x-2 shadow-lg shadow-blue-600/30 text-sm">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                            <span>Open in Google Maps</span>
+                        </a>
+                        <a href="mailto:contact@9xgc.com" class="bg-white/10 hover:bg-white/15 text-white border border-white/20 font-semibold px-7 py-3.5 rounded-xl transition backdrop-blur-md text-sm">
+                            Contact Leasing Team
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-28 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="text-blue-400 font-bold uppercase tracking-widest text-xs">Get In Touch</span>
+                <h2 class="text-3xl sm:text-5xl font-black mt-2 mb-4 tracking-tight">Leasing & Inquiries</h2>
+                <p class="text-slate-300 text-lg font-light">Ready to secure your spot at Preston Highlands? Reach out directly to our leasing team for floor plans and custom build-out options.</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-slate-800/80 border border-slate-700/80 rounded-3xl p-8 sm:p-12 shadow-2xl backdrop-blur-md">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 pb-10 border-b border-slate-700/80">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-600/20 border border-blue-500/40 text-blue-400 rounded-2xl flex items-center justify-center shrink-0">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Email Inquiries</div>
+                            <a href="mailto:contact@9xgc.com" class="text-base font-bold text-white hover:text-blue-400 transition mt-0.5 block">contact@9xgc.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-600/20 border border-blue-500/40 text-blue-400 rounded-2xl flex items-center justify-center shrink-0">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Leasing Phone</div>
+                            <a href="tel:9729040244" class="text-base font-bold text-white hover:text-blue-400 transition mt-0.5 block">972 904 0244</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="mailto:contact@9xgc.com" method="POST" enctype="text/plain" class="space-y-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name / Company</label>
+                        <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition text-sm" placeholder="e.g., John Doe">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition text-sm" placeholder="name@company.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                            <input type="tel" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition text-sm" placeholder="(555) 000-0000">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message / Space Requirement</label>
+                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition text-sm" placeholder="Tell us about your retail, restaurant, or office space requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-blue-600/30 flex items-center justify-center space-x-2 text-sm">
+                        <span>Send Inquiry to contact@9xgc.com</span>
+                        <i data-lucide="send" class="w-4 h-4"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <p class="font-bold text-white text-base">Preston Highlands Class A Commercial Space</p>
+                <p class="text-slate-500 mt-1 text-xs">11101 Preston Rd, Frisco, TX 75033[cite: 1]</p>
+            </div>
+            <div class="flex items-center space-x-8 text-xs font-medium">
+                <a href="#home" class="hover:text-white transition">Home</a>
+                <a href="#leasing" class="hover:text-white transition">Leasing</a>
+                <a href="#gallery" class="hover:text-white transition">Gallery</a>
+                <a href="#location" class="hover:text-white transition">Location</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+            <div>
+                <p class="text-slate-500 text-xs">&copy; 2026 Preston Highlands. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
